@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><title>Notes Board Options</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<script src="jquery/jquery.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href="login.css" rel="stylesheet" type="text/css" />
+<script src="js/safariFunctions.js" type="text/javascript"></script>
+<script src="js/varios.js" type="text/javascript"></script>
+<script src="js/noteboardapi.js" type="text/javascript"></script>
+<script src="js/login.js" type="text/javascript"></script>
+<script src="js/facebook.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div class="contenedor">
+
+		<h1 id='titulo'></h1>
+
+			<div id="loginForm">
+				<form id="formUser"action="#">
+					<h2>Login</h2>
+					<div id="mensLogin">Haz Login o registrate por favor </div>
+					<!-- <h2>Inicia sesión en <a href="http://www.tablondenotas.com">www.tablondenotas.com</a> para sincronizar</h2> -->
+					<label class="grey" id="labUser" for="log">Usuario o mail</label>
+					<input class="field" type="text" name="nick" id="nick" value="" size="23" />
+					<label class="grey" for="pwd">Password</label>
+					<input class="field" type="password" name="pwd" id="pwd" size="23" /><br><br>
+
+					<input class="button" id="buttonSubmit" type="submit" name="submit" value="Login" />
+					<input class="button" id="buttonReg" value="Registrarse"/><br>
+					<br>
+					<a class="lost-pwd" id="lostPwd" href="#">&iquest;te has olvidado del password?</a>
+				</form>
+
+
+				<form id="formUserReg"action="#">
+
+					<h1 id="mensReg">Registro</h1>
+					<div id="mensReg"></div>
+					<label class="grey" id="signupLabel" for="signup">Usuario</label>
+					<input class="field" type="text" name="signup" id="signup" value="" size="23" /><br>
+					<label class="grey" for="pwd">Password</label>
+					<input class="field" type="password" name="pwds" id="pwds" size="23" /><br>
+					<label class="grey" id="confirmPass" for="pwd">Confirmar Password</label>
+					<input class="field" type="password" name="pwds2" id="pwds2" size="23" /><br>
+					<label class="grey" for="email">Mail</label>
+					<input class="field" type="text" name="email" id="email" size="23" /><br>
+			        <div id="capaContenedora2"><br></div>
+					<input class="button" id="buttonSubmitReg" type="submit" name="submit" value="Registrar" class="bt_register" />
+					<input class="button" id="logBot" value="Login" />
+				</form>
+				<div id="capaContenedora"></div>
+
+				<div id="fb-login">
+	        		<a id="fb-button" href="#"><div class="fb-logo"></div><span>Entrar con Facebook</span></a>
+	    		</div>
+
+			</div>
+
+</div> <!-- contenedor -->
+<div id="black_overlay">'<div id="ajaxGif"><img src="imagenes/ajax-loader.gif"></div></div>
+<div id="dialog-confirm" title="Empty the recycle bin?"></div>
+</body>
+</html>
